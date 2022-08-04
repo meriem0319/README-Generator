@@ -11,9 +11,9 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // Installation, installation instructions
 // Usage, usage information
 // License --> list --> badge for that license is added near the top of the README and a notice 
-// is added to the section of the README entitled License that 
+//is added to the section of the README entitled License that 
 //explains which license the application is covered under
-// Contributing, contribution guidelines
+// Contributions, contribution guidelines
 // Tests, test instructions
 // Questions --> link to GitHub profile & email address with instructions on how to reach me
 
@@ -28,7 +28,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license should your project have?',
-        choices: ['None', 'Apache 2.0', 'MIT', 'GPL v3.0'],
+        choices: ['Apache 2.0', 'GPL v3.0', 'MIT', 'None'],
         validate: (value) => { if (value) { return true } else { return 'Please select a license to continue' } },
     },
     {
@@ -105,4 +105,5 @@ function init() {
 // Function call to initialize app
 init();
 
+// export the questions
 module.exports = questions;
