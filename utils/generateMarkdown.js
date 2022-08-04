@@ -35,6 +35,9 @@ function generateMarkdown(answer) {
   # ${answer.title}
 
   ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
+
+  ## Description:
+  #### ${answer.description}
     
   ## Table of Contents:
   * [License](#license)
