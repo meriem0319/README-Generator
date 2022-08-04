@@ -7,30 +7,15 @@ function renderLicenseBadge(license) {
   //'Apache 2.0', 'GPL v3.0', 'MIT', 'None'
   let badge = '';
   if(license === 'Apache 2.0') {
-    badge = '![License(https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
+    badge = '![![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   } else if (license === 'GPL v3.0') {
-    badge = '![License: GPL v3(https://img.shields.io/badge/License-GPLv3-blue.svg)'
+    badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
   } else if (license === 'MIT') {
-    badge = '![License: MIT(https://img.shields.io/badge/License-MIT-yellow.svg)]'
+    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
   } else if (license === 'None') {
     badge = ''
   }
   return badge;
-}
-
-// function for license links 
-function renderLicenseLink(license) {
-  let licenseLink = '';
-  if (license === 'Apache 2.0') {
-    licenseLink = 'https://opensource.org/licenses/Apache-2.0'
-  } else if (license === 'GPL v3.0') {
-    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
-  } else if (license === 'MIT') {
-    licenseLink = 'https://opensource.org/licenses/MIT'
-  } else if (license === 'None') {
-    licenseLink = ''
-  }
-  return licenseLink;   
 }
 
 //function to return the section for license in README
@@ -50,34 +35,33 @@ function generateMarkdown(answer) {
   # ${answer.title}
 
   ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
-  ### ${renderLicenseLink(answer.license)}
-  
+    
   ## Table of Contents:
-  ### * [License](#license)
-  ### * [Installation](#installation)
-  ### * [Contribution](#contribution)
-  ### * [Tests](#tests)
-  ### * [Questions?](#questions)
+  * [License](#license)
+  * [Installation](#installation)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions?](#questions)
 
   ## Instalation:
-  ### The following steps must be taken to install this app:
-  ### ${answer.installation}
+  #### To install this app you must do the following:
+  #### ${answer.installation}
 
   ## Usage:
-  ### ${answer.usage}
+  #### ${answer.usage}
 
   ## Contribution:
-  ### ${answer.contributions}
+  #### ${answer.contributing}
 
   ## Tests:
-  ### To test this app, run the following commands in your terminal:
-  ### ${answer.test}
+  #### To test this app, run the following commands in your terminal:
+  #### ${answer.tests}
 
-  ### Questions?
-  ### If you have any questions, please feel free to reach me via:
-  ### GitHub: https://github.com/${answer.gitHub}
-  ### or
-  ### Email: ${answer.email}
+  ## Questions?
+  #### If you have any questions, please feel free to reach me via:
+  #### GitHub: https://github.com/${answer.gitHub}
+  ##### or
+  #### Email: ${answer.email}
 `;
 }
 
