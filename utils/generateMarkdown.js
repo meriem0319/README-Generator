@@ -19,15 +19,15 @@ function renderLicenseBadge(license) {
 }
 
 //function to return the section for license in README
-// function renderLicenseSection(license) {
-//   let licenseSection = '';
-//   if (license === 'None') {
-//     licenseSection = ''
-//   } else {
-//     licenseSection = `License: ${license}`
-//   }
-//   return licenseSection;
-// }
+function renderLicenseSection(license) {
+  let licenseSection = '';
+  if (license === 'None') {
+    licenseSection = ''
+  } else {
+    licenseSection = `${license}`
+  }
+  return licenseSection;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answer) {
@@ -63,7 +63,7 @@ function generateMarkdown(answer) {
   #### ${answer.tests}
 
   ## License:
-  #### Licensed under the ${renderLicenseBadge(answer.license)} license.
+  #### Licensed under the ${renderLicenseSection(answer.license)} license.
 
   ## Questions?
   #### If you have any questions, please feel free to reach me via:
