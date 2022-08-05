@@ -34,13 +34,13 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a short description of your project',
+        message: 'Provide a short description of your project:',
         validate: (value) => { if (value) { return true } else { return 'Enter description to continue' } },
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Provide steps needed to install your project',
+        message: 'Provide steps needed to install your project:',
         validate: (value) => { if (value) { return true } else { return 'Enter installation details to continue' } },
     },
     {
