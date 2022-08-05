@@ -39,7 +39,7 @@ THEN I am taken to the corresponding section of the README
 ```
 ## 📸 Screenshot
 
-<img src="./images/readme.png">
+<img src="./images/genReadme.png">
 
 
 ## 💻 Deployment
@@ -49,6 +49,9 @@ THEN I am taken to the corresponding section of the README
 
 ### My repo link:
 * https://github.com/meriem0319/README-Generator
+
+### Generated README.md Example Link:
+* https://github.com/meriem0319/README-Generator/blob/main/generateREADME.md
 
 ## 📜 Author
 * Meriem Powell
