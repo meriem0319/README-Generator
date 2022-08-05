@@ -1,14 +1,16 @@
 # Node.js Professional README Generator
 
+## 🏗️ My Task
+
 My task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
-The application will be invoked by using the following command:
+* The application will be invoked by using the following command:
 
 ```bash
 node index.js
 ```
 
-## User Story
+## ✍️ User Story
 
 ```md
 AS A developer
@@ -16,7 +18,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
-## Acceptance Criteria
+## 🚦 Acceptance Criteria
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -35,3 +37,18 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+## 📸 Screenshot
+
+<img src="./images/"/>
+
+
+## 💻 Deployment
+ 
+### My live link:
+* https://meriem0319.github.io/MyDay-Planner/
+
+### My repo link:
+* https://github.com/meriem0319/MyDay-Planner
+
+## 📜 Author
+* Meriem Powell

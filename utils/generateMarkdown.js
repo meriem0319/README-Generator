@@ -38,6 +38,7 @@ function generateMarkdown(answer) {
 
   ## Description:
   #### ${answer.description}
+  ---
     
   ## Table of Contents:
   * [License](#license)
@@ -45,6 +46,7 @@ function generateMarkdown(answer) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions?](#questions)
+  ---
 
   ## Instalation:
   #### To install this app you must do the following:
@@ -53,7 +55,7 @@ function generateMarkdown(answer) {
   ## Usage:
   #### ${answer.usage}
 
-  ## Contribution:
+  ## Contributing:
   #### ${answer.contributing}
 
   ## Tests:
