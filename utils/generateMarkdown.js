@@ -19,22 +19,22 @@ function renderLicenseBadge(license) {
 }
 
 //function to return the section for license in README
-function renderLicenseSection(license) {
-  let licenseSection = '';
-  if (license === 'None') {
-    licenseSection = ''
-  } else {
-    licenseSection = `License: ${license}`
-  }
-  return licenseSection;
-}
+// function renderLicenseSection(license) {
+//   let licenseSection = '';
+//   if (license === 'None') {
+//     licenseSection = ''
+//   } else {
+//     licenseSection = `License: ${license}`
+//   }
+//   return licenseSection;
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answer) {
   return ` 
   # ${answer.title}
 
-  ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
+  ## ${renderLicenseBadge(answer.license)}
 
   ## Description:
   #### ${answer.description}
@@ -61,6 +61,9 @@ function generateMarkdown(answer) {
   ## Tests:
   #### To test this app, run the following commands in your terminal:
   #### ${answer.tests}
+
+  ## License:
+  #### Licensed under the ${renderLicenseBadge(answer.license)} license.
 
   ## Questions?
   #### If you have any questions, please feel free to reach me via:
