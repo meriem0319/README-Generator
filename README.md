@@ -39,16 +39,16 @@ THEN I am taken to the corresponding section of the README
 ```
 ## 📸 Screenshot
 
-<img src="./images/"/>
+<img src="./images/readme.png">
 
 
 ## 💻 Deployment
  
-### My live link:
-* https://meriem0319.github.io/MyDay-Planner/
+### My README.md Generator Walk-through Video Link:
+* 
 
 ### My repo link:
-* https://github.com/meriem0319/MyDay-Planner
+* https://github.com/meriem0319/README-Generator
 
 ## 📜 Author
 * Meriem Powell
