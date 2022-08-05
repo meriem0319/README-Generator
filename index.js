@@ -52,13 +52,13 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Provide guidelines for users who want to contribute to your project',
+        message: 'Provide guidelines for users who want to contribute to your project:',
         validate: (value) => { if (value) { return true } else { return 'Enter guidelines to continue' } },
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Provide instructions to test your project',
+        message: 'Provide instructions to test your project:',
         validate: (value) => { if (value) { return true } else { return 'Enter testing instructions to continue' } },
     },
     {

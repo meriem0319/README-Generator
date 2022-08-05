@@ -45,7 +45,7 @@ THEN I am taken to the corresponding section of the README
 ## 💻 Deployment
  
 ### My README.md Generator Walk-through Video Link:
-* 
+* https://drive.google.com/file/d/1Z4QpP3GYaLFc6EAyAgTStv6aiQtzlgqH/view
 
 ### My repo link:
 * https://github.com/meriem0319/README-Generator
